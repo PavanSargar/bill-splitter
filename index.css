@@ -1,0 +1,328 @@
+/* 
+Responsive Design:
+mobile: 576px
+tablet: 768px
+laptop: 992px
+desktop: 1200px
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #C5E4E7;
+    text-align: center;
+}
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+.brand {
+    padding: 100px 0 0 0;
+}
+.brand img {
+    height: 50px;
+    width: 100;
+}
+.card {
+    margin: 5% auto;
+    padding: 10px 0px;
+    width: 35%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.card h2 {
+    font-size: 10px;
+}
+.left-section {
+    margin: 0 5%;
+    padding: 20px 0;
+    width: 100%;
+}
+.left-section h2 {
+    color: hsl(186, 14%, 43%) ;
+}
+.select-tip h2, .people h2 {
+    margin: 15px 0 2px 0;
+}
+.bill h2 {
+    margin: 0 0 2px 0;
+}
+.right-section h2 {
+    color: hsl(185, 41%, 84%);
+}
+.right-section {
+    min-width: 180px;
+    margin: 0 5% 0 0;
+    padding: 25px;
+    border-radius: 12px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+}
+.right-section p {
+    font-size: 9px;
+    color: hsl(184, 14%, 56%);
+    margin: -8px 0 39px 0;
+}
+
+.bill input {
+    background: hsl(189, 41%, 97%) url("./images/icon-dollar.svg") no-repeat scroll 8px 8px;
+    background-size: 8px;
+}
+.people input {
+    background: hsl(189, 41%, 97%) url("./images/icon-person.svg") no-repeat scroll 8px 8px;
+    background-size: 8px;
+}
+.left-section input {
+    border: 2px solid hsl(189, 41%, 97%);
+    border-radius: 3px;
+    color: hsl(183, 100%, 15%);
+    width: 94%;
+    height: 25px;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    font-weight: bold;
+}
+.left-section input:focus {
+    outline: none;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.left-section button {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0;
+    width: 67px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    user-select: none;
+}
+.select-tip input {
+    font-size: 15px;
+    font-weight: bold;
+    width: 59px;
+    height: 24px;
+    text-align: right;
+    border: 2px solid hsl(189, 41%, 97%);
+    border-radius: 3px;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+    cursor: context-menu;
+}
+.select-tip input::placeholder {
+    text-align: center;
+    color: hsl(186, 14%, 43%);
+}
+.select-tip input:focus {
+    outline: none;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.left-section button:focus {
+    color:hsl(183, 100%, 15%);
+    background-color:#C5E4E7;
+}
+.people {
+    overflow: hidden;
+}
+.people input:invalid:focus {
+    border: 2px solid red;
+}
+.people h2 {
+    margin-bottom: -25px;
+}
+.people p {
+    float: right;
+    width: 86px;
+    margin: 15px 0 2px 135px;
+    font-size: 10px;
+    color: red;
+}
+.active {
+    visibility: hidden;
+}
+
+
+.right-section button {
+    margin: 30px 0 0 0;
+    border: none;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+} 
+.right-section button:hover {
+    background-color:  #C5E4E7;
+}
+.total, .tip-amount {
+       position: absolute;
+}
+.total-amount p {
+    text-align: end;
+    margin: 3px 0px 30px 0px;
+}
+
+.right-section p:first-child {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: hsl(172, 67%, 45%);
+}
+
+@media (max-width: 1420px) {
+    .card {
+        width: 37%;
+    }
+}
+
+@media (max-width: 1354px) {
+    .card {
+        width: 39%;
+    }
+}
+
+@media (max-width: 1265px) {
+    .card {
+        width: 42%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 44%;
+    }
+}
+@media (max-width: 1210px) {
+    .card {
+        width: 45%;
+    }
+}
+@media (max-width: 1100px) {
+    .card {
+        width: 48%;
+    }
+}
+@media (max-width: 1081px) {
+    .card {
+        width: 49%;
+    }
+}
+@media (max-width: 1039px) {
+    .card {
+        width: 51%;
+    }
+}
+@media (max-width: 1024px) {
+    .card {
+        width: 52%;
+    }
+}
+@media (max-width: 992px) {
+    .card {
+        width: 54%;
+    }
+}
+@media (max-width: 945px) {
+    .card {
+        width: 56%;
+    }
+}
+@media (max-width: 900px) {
+    .card {
+        width: 59%;
+    }
+}
+@media (max-width: 861px) {
+    .card {
+        width: 61%;
+    }
+}
+@media (max-width: 840px) {
+    .card {
+        width: 63%;
+    }
+}
+
+@media (max-width: 814px) {
+    .card {
+        width: 65%;
+    }
+}
+@media (max-width: 900px) {
+    .card {
+        width: 58%;
+    }
+}
+@media (max-width: 790px) {
+    .card {
+        width: 67%;
+    }
+}
+
+@media (max-width: 768px), (max-width: 576px), (max-width: 540px) and (max-width: 500px) {
+    .card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: space-between;
+    }
+    .card h2 {
+        font-size: 16px;
+    }
+    .left-section {
+        margin: 10px 0px 10px 0px;
+        padding: 20px 0px 20px 20px;
+    }
+    .left-section button {
+        font-size: 24px;
+        width: 44%;
+        height: 48px;
+    }
+    .left-section input {
+        width: 89%;
+        height: 35px;
+        padding-right: 10px;
+        font-size: 24px;
+    }
+    .bill input {
+        background: hsl(189, 41%, 97%) url("./images/icon-dollar.svg") no-repeat scroll 12px 12px;
+        background-size: 10px;
+    }
+    .people input {
+        background: hsl(189, 41%, 97%) url("./images/icon-person.svg") no-repeat scroll 12px 12px;
+        background-size: 10px;
+    }
+    .select-tip input {
+        font-size: 24px;
+        width: 42%;
+        height: 42px;
+    }
+    .right-section {
+        width: 79%;
+        margin: 5px 4%;
+    }
+    .right-section p:first-child {
+        font-size: 2rem;
+    }
+    .right-section p {
+        font-size: 13px;
+    }
+    .right-section button {
+        font-size: 24px;
+        height: 48px;
+        border-radius: 6px;
+    }
+
+}
